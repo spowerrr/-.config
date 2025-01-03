@@ -8,6 +8,10 @@ return {
 
   "andweeb/presence.nvim",
   {
+    "ThePrimeagen/vim-be-good",
+    event = "VeryLazy",
+  },
+  {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function()
