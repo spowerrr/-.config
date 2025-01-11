@@ -168,4 +168,6 @@ return {
   -- { import = "astrocommunity.media" },
   -- { import = "astrocommunity.lsp" },
   { import = "astrocommunity.markdown-and-latex" },
+  { import = "astrocommunity.diagnostics.error-lens-nvim" },
+  { import = "astrocommunity.docker.lazydocker" },
 }
