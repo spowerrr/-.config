@@ -180,4 +180,50 @@ return {
       }
     end,
   },
+  -- Add Tokyonight theme
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = "night",
+      transparent = false,
+      terminal_colors = true,
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = {},
+        variables = {},
+      },
+    },
+  },
+  -- Add OneDark theme with darker background
+  {
+    "navarasu/onedark.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = 'darker',  -- Choose darker style for deep black background
+      transparent = false,
+      term_colors = true,
+      code_style = {
+        comments = 'italic',
+        keywords = 'bold',
+        functions = 'none',
+        strings = 'none',
+        variables = 'none'
+      },
+      colors = {
+        black = "#000000",  -- Pure black background
+        bg0 = "#000000",    -- Making background pure black
+        bg1 = "#1a1a1a",    -- Slightly lighter for contrasts
+        bg2 = "#252525",    -- For UI elements
+      },
+    },
+    config = function(_, opts)
+      require('onedark').setup(opts)
+    end,
+  },
+  -- Add Catppuccin theme
+  -- ,
 }
