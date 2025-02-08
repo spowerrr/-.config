@@ -56,51 +56,59 @@
 --     },
 --   },
 -- }
+-- --
+-- return {
+--   {
+--     "catppuccin/nvim",
+--     name = "catppuccin",
+--     priority = 1000,
+--     opts = {
+--       flavour = "mocha", -- dark theme variant
+--       background = {
+--         dark = "mocha",
+--       },
+--       dim_inactive = {
+--         enabled = true,
+--         shade = "dark",
+--         percentage = 0.20,
+--       },
+--       styles = {
+--         comments = { "italic" },
+--         conditionals = { "italic" },
+--         loops = {},
+--         functions = {},
+--         keywords = { "bold" },
+--         strings = {},
+--         variables = {},
+--         numbers = {},
+--         booleans = {},
+--         properties = {},
+--         types = {},
+--       },
+--       integrations = {
+--         telescope = true,
+--         treesitter = true,
+--         cmp = true,
+--         gitsigns = true,
+--         mason = true,
+--         native_lsp = {
+--           enabled = true,
+--           virtual_text = {
+--             errors = { "italic" },
+--             hints = { "italic" },
+--             warnings = { "italic" },
+--             information = { "italic" },
+--           },
+--         },
+--       },
+--     },
+--   },
+-- }
 --
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "dgox16/oldworld.nvim",
+    lazy = false,
     priority = 1000,
-    opts = {
-      flavour = "mocha", -- dark theme variant
-      background = {
-        dark = "mocha",
-      },
-      dim_inactive = {
-        enabled = true,
-        shade = "dark",
-        percentage = 0.20,
-      },
-      styles = {
-        comments = { "italic" },
-        conditionals = { "italic" },
-        loops = {},
-        functions = {},
-        keywords = { "bold" },
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
-      },
-      integrations = {
-        telescope = true,
-        treesitter = true,
-        cmp = true,
-        gitsigns = true,
-        mason = true,
-        native_lsp = {
-          enabled = true,
-          virtual_text = {
-            errors = { "italic" },
-            hints = { "italic" },
-            warnings = { "italic" },
-            information = { "italic" },
-          },
-        },
-      },
-    },
   },
 }
